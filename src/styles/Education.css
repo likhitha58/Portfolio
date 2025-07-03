@@ -1,0 +1,45 @@
+/* Glassmorphic card styling */
+.education-card {
+  background: rgba(255, 255, 255, 0.08)!important ;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family:Quicksand;
+  border-left: 4px solid #8EB69B;
+  padding-left: 1rem;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+  border-left-color: #ffffff;
+}
+
+/* Typography and text adjustments */
+.education-card .card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.education-card .card-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #c8d6e5;
+}
+
+.education-card .card-text {
+  font-size: 1.1rem;
+  color: #e5f0f5;
+}
+
+.education-card .text-info {
+  font-weight: bold;
+  color: #8EB69B !important;
+}
+.education-card .text-muted{
+    color:white
+}

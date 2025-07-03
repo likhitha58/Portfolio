@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+.loader-container {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, #163832 0%, transparent 30%),
+              radial-gradient(circle at 70% 70%, #6d9479 0%, transparent 30%),
+              linear-gradient(40deg,  #235347, #163832, #0B2B26, #051F20, #0B2B26);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  filter: blur(0.5px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(109, 148, 121, 0.15); /* matches #6d9479 */
+  padding: 30px 50px;
+}
+
+.typing-loader {
+  display: flex;
+  align-items: center;
+   font-family: Quicksand;
+  font-size: 1.9rem;
+  color: #DAF1DE;
+  text-shadow: 0 0 4px #8EB69B, 0 0 8px rgba(109, 148, 121, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.bracket {
+  font-size: 1.6rem;
+  color: #8EB69B;
+  margin: 0 6px;
+}
+
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgba(109, 148, 121, 0.7); /* #6d9479 */
+  animation: typing 2.3s steps(22, end) 1 forwards;
+}
+
+.cursor {
+  animation: blink 1.2s infinite;
+  font-weight: bold;
+  color: #8eca98;
+  margin-left: 4px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14ch;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Optional fade-out transition */
+.fade-out {
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  pointer-events: none;
+}
+

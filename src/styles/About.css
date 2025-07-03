@@ -1,0 +1,40 @@
+.glass-about {
+  max-width: 1340px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 20px;
+  /* border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25); */
+  color: white;
+  font-family:Quicksand;
+  font-size:20px;
+}
+
+.about-img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.animated-gradient-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: linear-gradient(270deg, #ffffff, #328557, #26bdc5, white);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 10s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
