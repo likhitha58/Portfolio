@@ -22,3 +22,9 @@ To get started with this project:
 ```bash
 npm install       # Install all dependencies
 npm run dev       # Start the local development server
+
+```
+---
+MIT License
+
+Copyright (c) 2025 [Likhitha]
