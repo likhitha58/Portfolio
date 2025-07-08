@@ -4,7 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { motion } from "framer-motion";
 import "../styles/Home.css";
 import { FaLinkedin, FaGithub, FaCode } from "react-icons/fa";
-import likhithaPic from "../assets/likhithaPic.png";
+// import likhithaPic from "../assets/likhithaPic.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -20,7 +20,7 @@ function Home() {
     <Container className="glass-home my-5 p-5 rounded">
       <Row className="align-items-center">
         {/* Left: Text */}
-        <Col md={6} className="text-white text-center text-md-start">
+        <Col md={12} className="text-white text-center">
           <motion.h1
             className="display-5 fw-bold"
             variants={fadeUp}
@@ -43,7 +43,7 @@ function Home() {
           </motion.p>
 
           <motion.div
-            className="mt-4 social-icons d-flex gap-3 justify-content-center justify-content-md-start"
+            className="mt-4 social-icons d-flex gap-3 justify-content-center"
             variants={fadeUp}
             initial="hidden"
             animate="visible"
@@ -74,7 +74,7 @@ function Home() {
         </Col>
 
         {/* Right: Image */}
-        <Col md={6} className="text-center mt-4 mt-md-0">
+        {/* <Col md={6} className="text-center mt-4 mt-md-0">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -87,7 +87,7 @@ function Home() {
               className="home-img"
             />
           </motion.div>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   );

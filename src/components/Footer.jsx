@@ -13,8 +13,8 @@ function Footer() {
           <span><FaMapMarkerAlt className="me-2" /> Hyderabad, Telangana, India</span>
         </div>
         <div className="footer-social d-flex justify-content-center gap-4 fs-4 mb-3">
-          <a href="https://www.linkedin.com/in/likhitha" target="_blank" rel="noreferrer" className="footer-link"><FaLinkedin /></a>
-          <a href="https://github.com/likhitha" target="_blank" rel="noreferrer" className="footer-link"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/likhitha-tanuboddi-05a34a289/" target="_blank" rel="noreferrer" className="footer-link"><FaLinkedin /></a>
+          <a href="https://github.com/likhitha58" target="_blank" rel="noreferrer" className="footer-link"><FaGithub /></a>
         </div>
         {/* <p className="mb-0">&copy; 2025 Likhitha. All rights reserved.</p> */}
       </Container>

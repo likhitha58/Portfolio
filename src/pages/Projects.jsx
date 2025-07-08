@@ -3,29 +3,31 @@ import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
 import "../styles/Projects.css";
-
+import epicshelf from '../assets/epicshelf.jpeg';
+import smarttask from '../assets/smarttask.png';
+import portfolio from '../assets/portfolio.png';
 function Projects() {
   const projects = [
     {
       title: "Smart Task",
-      description: "Smart Task is a sleek task management web app for assigning, tracking, and managing team tasks efficiently.",
-      link: "https://github.com/your-github/smart-task",
-      image: "/assets/images/smart-task.png",
+      description: "Smart Task is a task management web app for assigning, tracking, managing and reviewing team tasks efficiently.",
+      link: "https://github.com/likhitha58/SMART-TASK-3",
+      image: smarttask,
       techStack: ["React.js", "Node.js", "Express", "SQL Server", "Bootstrap"],
     },
     {
       title: "Personal Portfolio",
       description: "Built my static development portfolio using React.js and incorporated Three.js library for minute 3d animations. ",
-      link: "https://github.com/your-github/student-loan-advisor",
-      image: "/assets/images/loan-advisor.png",
+      link: "https://github.com/likhitha58/Portfolio",
+      image: portfolio,
       techStack: ["React.js", "Three.js"],
     },
     {
-      title: "YouTube Sentiment Analyzer",
-      description: "Streamlit-based app analyzing YouTube comment sentiments using Python, NLP (NLTK), and visualization tools.",
-      link: "https://github.com/your-github/youtube-sentiment-analyzer",
-      image: "/assets/images/youtube-analyzer.png",
-      techStack: ["Python", "Streamlit", "NLTK", "Pandas", "YouTube API"],
+      title: "EpicShelf",
+      description: "EpicShelf is book-selling e commerce platform where users can buy and sell second-hand books online.",
+      link: "https://github.com/likhitha58/EpicShelf",
+      image: epicshelf,
+      techStack: ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
     },
   ];
 
