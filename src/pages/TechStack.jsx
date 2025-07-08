@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaDatabase, FaPython,FaServer  } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiHtml5, SiCss3, SiJavascript, SiBootstrap,SiFigma} from 'react-icons/si';
+import { SiMongodb, SiExpress, SiHtml5, SiCss3, SiJavascript, SiBootstrap,SiFigma,SiPhp} from 'react-icons/si';
 import '../styles/TechStack.css';
 
 const techStack = [
@@ -8,6 +8,8 @@ const techStack = [
   { name: "Node.js", icon: <FaNodeJs />, color: "#68A063" },
   { name: "Express", icon: <SiExpress />, color: "#fff" },
   { name: "MS SQL Server", icon: <FaServer />, color: "#CC2927" },
+  { name: "PHP", icon: <SiPhp />, color: "#8892BE" },
+
   // { name: "MongoDB", icon: <SiMongodb />, color: "#4DB33D" },
   // { name: "SQL", icon: <FaDatabase />, color: "#f29111" },
   // { name: "Python", icon: <FaPython />, color: "#3776AB" },
