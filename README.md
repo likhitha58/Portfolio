@@ -1,12 +1,30 @@
-# React + Vite
+# 💼 Likhitha's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a sleek and minimal portfolio web application built using **React** and **Vite**, featuring **3D elements using Three.js**, **Hot Module Replacement (HMR)** for fast updates, reusable components, and basic ESLint setup.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ React (with functional components and hooks)
+- ⚡ Vite (for ultra-fast development and builds)
+- 🌐 Three.js (for interactive 3D visuals and animations)
+- 💅 Bootstrap (for responsive design and styling)
+- 📦 npm (for dependency management)
+- 🧹 ESLint (for code quality and consistency)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔧 Setup
+
+To get started with this project:
+
+```bash
+npm install       # Install all dependencies
+npm run dev       # Start the local development server
+
+```
+---
+MIT License
+
+Copyright (c) 2025 [Likhitha]
