@@ -16,6 +16,13 @@ function Projects() {
       techStack: ["React.js", "Node.js", "Express", "SQL Server", "Bootstrap"],
     },
     {
+      title: "Smart Task",
+      description: "Smart Task is a task management web app for assigning, tracking, managing and reviewing team tasks efficiently.",
+      link: "https://github.com/likhitha58/SMART-TASK-3",
+      image: smarttask,
+      techStack: ["React.js", "Node.js", "Express", "SQL Server", "Bootstrap"],
+    },
+    {
       title: "Personal Portfolio",
       description: "Built my static development portfolio using React.js and incorporated Three.js library for minute 3d animations. ",
       link: "https://github.com/likhitha58/Portfolio",
