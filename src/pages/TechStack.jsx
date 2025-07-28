@@ -8,7 +8,7 @@ const techStack = [
   { name: "Node.js", icon: <FaNodeJs />, color: "#68A063" },
   { name: "Express", icon: <SiExpress />, color: "#fff" },
   { name: "MS SQL Server", icon: <FaServer />, color: "#CC2927" },
-  { name: "MongoDB", icon: <SiMongodb />, color: "#4DB33D" },it
+  { name: "MongoDB", icon: <SiMongodb />, color: "#4DB33D" },
   { name: "PHP", icon: <SiPhp />, color: "#8892BE" },
   // { name: "SQL", icon: <FaDatabase />, color: "#f29111" },
   // { name: "Python", icon: <FaPython />, color: "#3776AB" },
