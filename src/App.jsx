@@ -11,6 +11,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { motion } from 'framer-motion';
 import ParticleBackground from './components/ParticleBackground.jsx';
 import Loader from './components/Loader.jsx';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 export default function App() {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
