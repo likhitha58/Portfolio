@@ -9,7 +9,7 @@ function Education() {
       institution: "SRM University, AP",
       location: "Amaravati, Andhra Pradesh, India",
       duration: "2023 - 2027",
-      grade: "CGPA: 8.99/10",
+      grade: "CGPA: 9.14/10",
     },
     {
       degree: "Intermediate (MPC)",

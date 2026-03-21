@@ -10,10 +10,22 @@ function About() {
       <Row className="align-items-center justify-content-center">
         <Col md={10} className="text-center">
           <p className="animated-gradient-text mb-4">
-            I'm a pre-final year computer science student from SRM University, AP. The creativity behind building engaging digital experiences is what drew me to full-stack web development — where design meets functionality. I'm always on the go for real-world challenges and turn them into intuitive and beautiful web experiences. Pursuing a minor in Finance motivates me to develop fintech applications in the future. 
+            I’m a pre-final year Computer Science student at SRM University, AP,
+            specializing in full-stack MERN development with a growing interest
+            in AI-integrated web applications. I enjoy building scalable,
+            user-centric solutions where design meets functionality, combining
+            clean interfaces with efficient backend systems.{" "}
           </p>
           <p className="animated-gradient-text mb-4">
-            When I’m not coding, you’ll find me playing sports, brainstorming ideas, or supporting student tech communities.
+            I’m passionate about applying technology to real-world problems and
+            continuously exploring how machine learning and Generative AI can
+            enhance modern web experiences.
+          </p>
+          <p>
+            Pursuing a minor in Finance further motivates me to work towards
+            developing innovative fintech solutions in the future. When I’m not
+            coding, you’ll find me playing sports, brainstorming ideas, or
+            actively contributing to student tech communities.
           </p>
         </Col>
       </Row>
