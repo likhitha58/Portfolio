@@ -32,14 +32,13 @@ function Home() {
           </motion.h1>
 
           <motion.p
-            className="lead mt-3"
+            className="lead mt-3 fw-semibold"
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            custom={2}
+            custom={4}
           >
-            I’m a creative web developer passionate about building beautiful and
-            functional digital experiences.
+            MERN Developer || Generative AI || NLP || Fintech
           </motion.p>
 
           <motion.div

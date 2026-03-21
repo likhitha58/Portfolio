@@ -21,7 +21,7 @@ function About() {
             continuously exploring how machine learning and Generative AI can
             enhance modern web experiences.
           </p>
-          <p>
+          <p className="animated-gradient-text mb-4">
             Pursuing a minor in Finance further motivates me to work towards
             developing innovative fintech solutions in the future. When I’m not
             coding, you’ll find me playing sports, brainstorming ideas, or
