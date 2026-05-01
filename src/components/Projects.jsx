@@ -1,59 +1,188 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import harmoneyImg from '../assets/harmoney.png';
+import smarttaskImg from '../assets/smarttask.png';
+import epicshelfImg from '../assets/epicshelf.jpeg';
 
 const projectsData = [
   {
     id: 1,
-    title: "FinCalc-AI Advisor",
-    category: "Finance + AI",
-    problem: "Navigating complex financial calculations often requires specialized knowledge, leaving everyday users confused about loans, investments, and taxes.",
-    solution: "An intelligent chatbot powered by LLMs that translates natural language queries into precise financial formulas and calculates exact outcomes.",
-    impact: "Democratizes financial planning with high accuracy in interpreting complex financial scenarios.",
-    tech: ["React", "Express", "Python", "LLMs", "Tailwind CSS"],
+    title: "NeuroAge XAI Lab",
+    category: "AI & NLP",
+    problem: "Detecting brain age from MRI scans is complex and often lacks transparency for medical professionals to trust AI results.",
+    solution: "A deep learning system that predicts brain age and explains its decisions using visual heatmaps (XAI).",
+    impact: "Provides clinicians with both a prediction and a 'why', increasing trust in AI-assisted diagnostics.",
+    tech: ["Python", "PyTorch", "React", "Grad-CAM"],
     features: [
-      "Natural language financial query understanding",
-      "Real-time dynamic calculations",
-      "Context-aware conversation memory",
-      "Detailed citation and breakdown of math"
+      "Brain age estimation using MRI scans",
+      "Grad-CAM visual heatmaps for transparency",
+      "Interactive clinical dashboard",
+      "Multi-model architecture comparison"
     ],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-    github: "#",
+    image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=2071&auto=format&fit=crop",
+    github: "https://github.com/likhitha58/neuroage-xai-lab",
     live: "#"
   },
   {
     id: 2,
-    title: "Market Sentiment Analyzer",
-    category: "AI/ML",
-    problem: "Traders struggle to gauge real-time market sentiment from the flood of news articles and social media posts.",
-    solution: "A scalable RAG application that scrapes financial news, processes text using NLP, and provides real-time bullish/bearish sentiment scores.",
-    impact: "Reduces market research time by 80% and provides actionable insights for retail investors.",
-    tech: ["Next.js", "FastAPI", "HuggingFace", "MongoDB", "Framer Motion"],
+    title: "LLM Text Summarization",
+    category: "AI & NLP",
+    problem: "Reading long research papers and documents is time-consuming for students and professionals.",
+    solution: "A tool that uses Large Language Models to condense long documents into short, easy-to-read summaries.",
+    impact: "Reduces reading time by 70% while maintaining the core meaning of the original text.",
+    tech: ["Python", "Hugging Face", "Flask", "React"],
     features: [
-      "Live news scraping & embedding",
-      "Transformer-based sentiment classification",
-      "Interactive data visualization charts",
-      "User portfolio tracking"
+      "Automated extraction of key points",
+      "Support for PDF and TXT file uploads",
+      "Adjustable summary length",
+      "Context-aware language processing"
     ],
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?q=80&w=2070&auto=format&fit=crop",
     github: "#",
     live: "#"
   },
   {
     id: 3,
-    title: "OmniCart E-Commerce",
-    category: "MERN Stack",
-    problem: "Small businesses lack affordable, customizable, and high-performance online storefronts.",
-    solution: "A complete multi-tenant e-commerce platform with a headless CMS, secure payments, and dynamic inventory management.",
-    impact: "Enables small vendors to launch a tailored store within minutes, handling 10k+ concurrent requests.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
+    title: "Payout AI (Financial RAG)",
+    category: "Financial Tech",
+    problem: "Manually searching for data in long financial reports is slow and often leads to missing important details.",
+    solution: "A RAG-based application that retrieves specific data from financial PDFs to answer user questions.",
+    impact: "Enables instant, accurate financial analysis with direct citations from the documents.",
+    tech: ["Python", "LangChain", "FAISS", "Hugging Face"],
     features: [
-      "Role-based access control (Admin, Vendor, User)",
-      "Secure Stripe payment integration",
-      "Algorithmic product recommendations",
-      "Real-time order tracking"
+      "Semantic search across financial PDFs",
+      "Document-grounded AI answers",
+      "Strict citation of source text",
+      "Privacy-first local document processing"
     ],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2026&auto=format&fit=crop",
+    github: "https://github.com/likhitha58/FINANCIAL-RAG-APP",
+    live: "#"
+  },
+  {
+    id: 4,
+    title: "FinCalc AI",
+    category: "Financial Tech",
+    problem: "AI chatbots often make mistakes with math, making them unreliable for financial planning.",
+    solution: "A tool-augmented assistant that combines AI reasoning with reliable code functions for zero-error math.",
+    impact: "Provides trustworthy financial calculations that users can actually rely on for planning.",
+    tech: ["Python", "LLaMA 3.1", "Ollama", "JavaScript"],
+    features: [
+      "Natural language financial queries",
+      "Zero-hallucination math calculations",
+      "Interactive EMI and SIP calculators",
+      "Context-aware conversational assistant"
+    ],
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2011&auto=format&fit=crop",
+    github: "https://github.com/likhitha58/FinCalc-AI",
+    live: "#"
+  },
+  {
+    id: 5,
+    title: "LexAI (Legal Intelligence)",
+    category: "AI & NLP",
+    problem: "Reviewing long legal contracts for specific risks and clauses is tedious and expensive.",
+    solution: "An intelligent system designed to help users review legal contracts and find specific clauses quickly.",
+    impact: "Speeds up contract review and highlights key risks without needing manual searching.",
+    tech: ["Python", "FAISS", "Google Gemini", "React"],
+    features: [
+      "Semantic clause search and retrieval",
+      "Automated contract risk assessment",
+      "Clause question-answering system",
+      "Glassmorphism document viewer"
+    ],
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop",
+    github: "https://github.com/likhitha58/Legal-Document-Intelligence-",
+    live: "#"
+  },
+  {
+    id: 6,
+    title: "Loan Eligibility Predictor",
+    category: "AI & NLP",
+    problem: "Manual loan processing is slow and prone to human error, leading to delays and inconsistent decisions.",
+    solution: "A machine learning model that predicts loan approval based on financial and demographic data.",
+    impact: "Speeds up the approval process while maintaining high precision in identifying eligible candidates.",
+    tech: ["Python", "Scikit-learn", "Random Forest", "Pandas"],
+    features: [
+      "Missing value imputation for numerical and categorical data",
+      "Log transformation for normalized data distribution",
+      "Random Forest classification for reliable results",
+      "Manual input testing system for real-time validation"
+    ],
+    image: "https://images.unsplash.com/photo-1560472355-536de3962603?q=80&w=2070&auto=format&fit=crop",
     github: "#",
+    live: "#"
+  },
+  {
+    id: 7,
+    title: "Harmoney",
+    category: "MERN Stack",
+    problem: "Tracking daily spending and staying within a budget is difficult without a centralized, simple tool.",
+    solution: "A personal finance app built to help users track their daily spending and manage their budgets effectively.",
+    impact: "Helps users achieve their savings goals by providing clear visibility into spending habits.",
+    tech: ["MongoDB", "Express", "React", "Node.js"],
+    features: [
+      "Real-time expense tracking",
+      "Monthly budget limits and alerts",
+      "Visual spending analytics charts",
+      "Secure user data authentication"
+    ],
+    image: harmoneyImg,
+    github: "#",
+    live: "#"
+  },
+  {
+    id: 8,
+    title: "Smart Task",
+    category: "MERN Stack",
+    problem: "Managing tasks across work, study, and personal life often leads to missed deadlines and disorganized goals.",
+    solution: "A streamlined task management system designed to help users organize their work and improve productivity.",
+    impact: "Improves daily organization by centralizing all responsibilities in a simple dashboard.",
+    tech: ["MongoDB", "Express", "React", "Node.js"],
+    features: [
+      "Priority-based task organization",
+      "Due date tracking and reminders",
+      "Progress monitoring dashboard",
+      "Category-based task filtering"
+    ],
+    image: smarttaskImg,
+    github: "#",
+    live: "#"
+  },
+  {
+    id: 9,
+    title: "YouTube Comment Analyzer",
+    category: "AI & NLP",
+    problem: "Understanding the overall mood of a video's comment section is impossible manually when there are thousands of comments.",
+    solution: "A tool that fetches YouTube comments and uses AI to categorize them as positive, negative, or neutral.",
+    impact: "Provides instant feedback on audience sentiment through visual charts and summaries.",
+    tech: ["Python", "Streamlit", "Scikit-learn", "NLTK"],
+    features: [
+      "Real-time comment fetching via YouTube API",
+      "Automated text cleaning and NLP processing",
+      "Machine learning sentiment classification",
+      "Interactive data visualization charts"
+    ],
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2074&auto=format&fit=crop",
+    github: "https://github.com/likhitha58/Youtube_Comments_Sentiment_analysis",
+    live: "#"
+  },
+  {
+    id: 10,
+    title: "EpicShelf",
+    category: "MERN Stack",
+    problem: "Finding affordable books or selling used ones can be a hassle without a dedicated community platform.",
+    solution: "A complete marketplace for buying, selling, and renting books to make reading more accessible.",
+    impact: "Promotes book reuse and helps readers find affordable books through a simple rental system.",
+    tech: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
+    features: [
+      "Multi-user marketplace (Buyer, Seller, Admin)",
+      "Automated book rental and return tracking",
+      "Integrated wallet and payment system",
+      "Verified user review and rating system"
+    ],
+    image: epicshelfImg,
+    github: "https://github.com/likhitha58/EpicShelf",
     live: "#"
   }
 ];
@@ -62,10 +191,10 @@ export default function Projects() {
   const [filter, setFilter] = useState('All');
   const [activeProject, setActiveProject] = useState(null);
 
-  const categories = ['All', 'Finance + AI', 'AI/ML', 'MERN Stack'];
+  const categories = ['All', 'AI & NLP', 'Financial Tech', 'MERN Stack'];
 
-  const filteredProjects = filter === 'All' 
-    ? projectsData 
+  const filteredProjects = filter === 'All'
+    ? projectsData
     : projectsData.filter(p => p.category === filter);
 
   return (
@@ -79,19 +208,18 @@ export default function Projects() {
           className="flex flex-col items-center text-center mb-16"
         >
           <div className="px-4 py-1.5 rounded-full bg-secondary text-dark text-xs font-bold uppercase mb-6">Case Studies</div>
-          <h2 className="text-4xl md:text-5xl font-bold text-dark mb-6 tracking-tight">Showcasing <span className="text-primary italic font-serif">Impact.</span></h2>
-          
+          <h2 className="text-4xl md:text-5xl font-bold text-dark mb-6 tracking-tight">Projects</h2>
+
           {/* Filters */}
           <div className="flex flex-wrap justify-center gap-3 mt-4">
             {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-8 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${
-                  filter === cat 
+                className={`px-8 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${filter === cat
                     ? 'bg-dark border-dark text-white shadow-lg'
                     : 'bg-white border-gray-200 text-gray-500 hover:border-dark hover:text-dark'
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -113,20 +241,20 @@ export default function Projects() {
                 onClick={() => setActiveProject(project)}
               >
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
+                  <img
+                    src={project.image}
+                    alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
-                
+
                 <div className="p-8 flex flex-col flex-grow">
                   <span className="text-xs font-bold text-primary uppercase tracking-widest mb-3">{project.category}</span>
                   <h4 className="text-2xl font-bold text-dark mb-4 group-hover:text-primary transition-colors">{project.title}</h4>
                   <p className="text-sm text-gray-500 font-medium line-clamp-2 mb-6">{project.problem}</p>
-                  
+
                   <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.tech.slice(0,3).map(t => (
+                    {project.tech.slice(0, 3).map(t => (
                       <span key={t} className="px-3 py-1 text-[10px] bg-white rounded-full text-dark font-bold border border-gray-100">{t}</span>
                     ))}
                   </div>
@@ -154,8 +282,8 @@ export default function Projects() {
               onClick={(e) => e.stopPropagation()}
               className="bg-white rounded-[3rem] w-full max-w-4xl max-h-[90vh] overflow-y-auto flex flex-col md:flex-row shadow-2xl relative"
             >
-              <button 
-                onClick={() => setActiveProject(null)} 
+              <button
+                onClick={() => setActiveProject(null)}
                 className="absolute top-6 right-6 z-10 w-12 h-12 rounded-full bg-dark text-white flex items-center justify-center text-xl hover:bg-primary transition-colors"
               >
                 ✕
@@ -164,18 +292,18 @@ export default function Projects() {
               <div className="w-full md:w-2/5 h-80 md:h-auto">
                 <img src={activeProject.image} alt={activeProject.title} className="w-full h-full object-cover" />
               </div>
-              
+
               <div className="p-10 md:p-14 md:w-3/5">
                 <span className="text-xs font-bold text-primary uppercase tracking-widest">{activeProject.category}</span>
                 <h3 className="text-4xl font-extrabold text-dark mt-2 mb-8">{activeProject.title}</h3>
-                
+
                 <div className="space-y-8 mt-6">
                   <div>
-                    <h5 className="text-dark font-bold text-xs uppercase tracking-[0.2em] mb-3">The Problem</h5>
+                    <h5 className="text-dark font-bold text-xs uppercase tracking-[0.2em] mb-3">What it does</h5>
                     <p className="text-gray-500 font-medium leading-relaxed">{activeProject.problem}</p>
                   </div>
                   <div>
-                    <h5 className="text-dark font-bold text-xs uppercase tracking-[0.2em] mb-3">The Impact</h5>
+                    <h5 className="text-dark font-bold text-xs uppercase tracking-[0.2em] mb-3">How it works</h5>
                     <p className="text-dark font-bold leading-relaxed border-l-4 border-primary pl-6 py-1 italic">
                       {activeProject.impact}
                     </p>

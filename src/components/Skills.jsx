@@ -1,21 +1,38 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaPython, FaDatabase, FaAws, FaGithub, FaFigma } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs, SiMongodb, SiFastapi, SiTensorflow } from 'react-icons/si';
+import { FaCode, FaBrain, FaLaptopCode, FaDatabase, FaRobot, FaTools } from 'react-icons/fa';
 
-const skills = [
-  { name: 'React', icon: <FaReact /> },
-  { name: 'Node.js', icon: <FaNodeJs /> },
-  { name: 'Python', icon: <FaPython /> },
-  { name: 'Next.js', icon: <SiNextdotjs /> },
-  { name: 'Tailwind', icon: <SiTailwindcss /> },
-  { name: 'MongoDB', icon: <SiMongodb /> },
-  { name: 'FastAPI', icon: <SiFastapi /> },
-  { name: 'SQL', icon: <FaDatabase /> },
-  { name: 'TensorFlow', icon: <SiTensorflow /> },
-  { name: 'AWS', icon: <FaAws /> },
-  { name: 'GitHub', icon: <FaGithub /> },
-  { name: 'Figma', icon: <FaFigma /> },
+const skillCategories = [
+  {
+    title: "Programming Languages",
+    icon: <FaCode />,
+    skills: "C, C++, Python, Java"
+  },
+  {
+    title: "Core Concepts",
+    icon: <FaBrain />,
+    skills: "Data Structures, OOP, Operating Systems, Computer Networks, DBMS"
+  },
+  {
+    title: "Web Development",
+    icon: <FaLaptopCode />,
+    skills: "React.js, Node.js, Express.js, JavaScript, Bootstrap, REST APIs, JWT Authentication"
+  },
+  {
+    title: "Databases",
+    icon: <FaDatabase />,
+    skills: "SQL Server, MongoDB"
+  },
+  {
+    title: "AI / ML",
+    icon: <FaRobot />,
+    skills: "NLP, TF-IDF, Generative AI, Model Evaluation"
+  },
+  {
+    title: "Tools",
+    icon: <FaTools />,
+    skills: "GitHub, VS Code"
+  }
 ];
 
 export default function Skills() {
@@ -31,24 +48,27 @@ export default function Skills() {
           >
             Capabilities
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Technical <span className="text-primary">Proficiency.</span></h2>
-          <p className="text-gray-400 max-w-lg">A curated selection of technologies I use to bring complex digital visions to life.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Technical <span className="text-primary">Skills.</span></h2>
+          <p className="text-gray-400 max-w-lg">Technologies I have worked with to build my projects.</p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
-          {skills.map((skill, idx) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {skillCategories.map((category, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.05 }}
-              className="flex flex-col items-center gap-4 p-8 bg-white/5 rounded-3xl border border-white/10 hover:border-primary/50 transition-all hover:bg-white/10 group"
+              transition={{ delay: idx * 0.1 }}
+              className="p-8 bg-white/5 rounded-[2.5rem] border border-white/10 hover:border-primary/50 transition-all group"
             >
-              <div className="text-4xl text-gray-400 group-hover:text-primary transition-colors">
-                {skill.icon}
+              <div className="text-3xl text-primary mb-6 group-hover:scale-110 transition-transform">
+                {category.icon}
               </div>
-              <span className="text-sm font-semibold text-gray-300">{skill.name}</span>
+              <h3 className="text-xl font-bold mb-4 text-white">{category.title}</h3>
+              <p className="text-gray-400 leading-relaxed font-medium">
+                {category.skills}
+              </p>
             </motion.div>
           ))}
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import pp from '../assets/pp.jpeg';
 
 export default function Hero() {
   return (
@@ -13,14 +14,6 @@ export default function Hero() {
 
         {/* Left Side: Content */}
         <div className="flex flex-col items-start gap-8">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 text-gray-300 border border-white/10 text-xs font-bold uppercase tracking-wider"
-          >
-            <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-            Available for New Projects
-          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -28,9 +21,9 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-6xl md:text-8xl font-extrabold leading-[1.1] tracking-tight text-white"
           >
-            Digital <br />
-            <span className="text-primary italic font-serif">Solutions</span> <br />
-            Architect.
+            Building  <br />
+            <span className="text-primary italic font-serif">AI-Driven</span> <br />
+            Applications.
           </motion.h1>
 
           <motion.p
@@ -39,7 +32,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-gray-400 max-w-lg leading-relaxed font-medium"
           >
-            I'm <span className="text-white font-bold">Likhitha</span>, specialized in building intelligent financial systems and high-impact web experiences. Combining logic with aesthetic excellence.
+            I'm <span className="text-white font-bold">Likhitha</span>, a pre-final year Computer Science student building scalable MERN applications and integrating AI, GenAI, and NLP to solve real-world problems.
           </motion.p>
 
           <motion.div
@@ -55,10 +48,10 @@ export default function Hero() {
               <a href="https://github.com/likhitha58" target="_blank" rel="noreferrer" className="hover:text-white transition-all transform hover:-translate-y-1">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/likhitha" target="_blank" rel="noreferrer" className="hover:text-white transition-all transform hover:-translate-y-1">
+              <a href="https://www.linkedin.com/in/likhitha-tanuboddi-05a34a289/" target="_blank" rel="noreferrer" className="hover:text-white transition-all transform hover:-translate-y-1">
                 <FaLinkedin />
               </a>
-              <a href="mailto:likhitha@example.com" className="hover:text-white transition-all transform hover:-translate-y-1">
+              <a href="mailto:likhithatanuboddi58@gmail.com" className="hover:text-white transition-all transform hover:-translate-y-1">
                 <FaEnvelope />
               </a>
             </div>
@@ -80,7 +73,7 @@ export default function Hero() {
             {/* Main Image Container */}
             <div className="relative w-full h-full bg-white/5 rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl">
               <img
-                src="d:\placement picture.jpeg"
+                src={pp}
                 alt="Likhitha"
                 className="w-full h-full object-cover filter contrast-110 saturate-110"
               />
@@ -91,18 +84,9 @@ export default function Hero() {
               {/* Corner Accent */}
               <div className="absolute bottom-6 left-6 p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20">
                 <div className="text-[10px] text-primary font-bold uppercase tracking-[0.2em] mb-1">Based in</div>
-                <div className="text-sm font-bold text-white">Bangalore, India</div>
+                <div className="text-sm font-bold text-white">Hyderabad, India</div>
               </div>
             </div>
-
-            {/* Floaties */}
-            <motion.div
-              animate={{ y: [0, -15, 0] }}
-              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute -top-6 -right-6 w-24 h-24 bg-secondary rounded-full flex items-center justify-center shadow-xl rotate-12 z-20"
-            >
-              <span className="text-4xl">🚀</span>
-            </motion.div>
           </div>
         </motion.div>
 
@@ -113,10 +97,7 @@ export default function Hero() {
         <div className="container mx-auto flex items-center justify-between border-t border-white/10 pt-8">
           <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Technologies I Love</span>
           <div className="flex gap-12 text-2xl text-gray-400 font-bold">
-            <span>REACT</span>
-            <span>NODE.JS</span>
-            <span>PYTHON</span>
-            <span>FIGMA</span>
+            <span>React</span> <span>Node.js</span> <span>MongoDB</span> <span>Python</span> <span>AI / NLP</span>
           </div>
         </div>
       </div>
