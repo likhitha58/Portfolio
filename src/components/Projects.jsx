@@ -3,7 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import harmoneyImg from '../assets/harmoney.png';
 import smarttaskImg from '../assets/smarttask.png';
 import epicshelfImg from '../assets/epicshelf.jpeg';
-
+import loan from '../assets/loan.png';
+import payout from '../assets/payout.png';
+import fincalc from '../assets/fincalc.png';
+import textsumm from '../assets/textsumm.png';
+import lexai from '../assets/lexai.png';
+import neuroage from '../assets/neuroage.png';
+import youtube from '../assets/youtube.png';
 const projectsData = [
   {
     id: 1,
@@ -19,7 +25,7 @@ const projectsData = [
       "Interactive clinical dashboard",
       "Multi-model architecture comparison"
     ],
-    image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=2071&auto=format&fit=crop",
+    image: neuroage,
     github: "https://github.com/likhitha58/neuroage-xai-lab",
     live: "#"
   },
@@ -37,7 +43,7 @@ const projectsData = [
       "Adjustable summary length",
       "Context-aware language processing"
     ],
-    image: "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?q=80&w=2070&auto=format&fit=crop",
+    image: textsumm,
     github: "#",
     live: "#"
   },
@@ -55,7 +61,7 @@ const projectsData = [
       "Strict citation of source text",
       "Privacy-first local document processing"
     ],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2026&auto=format&fit=crop",
+    image: payout,
     github: "https://github.com/likhitha58/FINANCIAL-RAG-APP",
     live: "#"
   },
@@ -73,7 +79,7 @@ const projectsData = [
       "Interactive EMI and SIP calculators",
       "Context-aware conversational assistant"
     ],
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2011&auto=format&fit=crop",
+    image: fincalc,
     github: "https://github.com/likhitha58/FinCalc-AI",
     live: "#"
   },
@@ -91,7 +97,7 @@ const projectsData = [
       "Clause question-answering system",
       "Glassmorphism document viewer"
     ],
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop",
+    image: lexai,
     github: "https://github.com/likhitha58/Legal-Document-Intelligence-",
     live: "#"
   },
@@ -109,7 +115,7 @@ const projectsData = [
       "Random Forest classification for reliable results",
       "Manual input testing system for real-time validation"
     ],
-    image: "https://images.unsplash.com/photo-1560472355-536de3962603?q=80&w=2070&auto=format&fit=crop",
+    image: loan,
     github: "#",
     live: "#"
   },
@@ -163,7 +169,7 @@ const projectsData = [
       "Machine learning sentiment classification",
       "Interactive data visualization charts"
     ],
-    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2074&auto=format&fit=crop",
+    image: youtube,
     github: "https://github.com/likhitha58/Youtube_Comments_Sentiment_analysis",
     live: "#"
   },
@@ -193,9 +199,9 @@ export default function Projects() {
 
   const categories = ['AI & NLP', 'Financial Tech', 'MERN Stack'];
 
-  const filteredProjects = projectsData.filter(p => 
-    Array.isArray(p.category) 
-      ? p.category.includes(filter) 
+  const filteredProjects = projectsData.filter(p =>
+    Array.isArray(p.category)
+      ? p.category.includes(filter)
       : p.category === filter
   );
 
