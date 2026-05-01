@@ -98,7 +98,7 @@ const projectsData = [
   {
     id: 6,
     title: "Loan Eligibility Predictor",
-    category: "AI & NLP",
+    category: "Financial Tech",
     problem: "Manual loan processing is slow and prone to human error, leading to delays and inconsistent decisions.",
     solution: "A machine learning model that predicts loan approval based on financial and demographic data.",
     impact: "Speeds up the approval process while maintaining high precision in identifying eligible candidates.",
@@ -116,7 +116,7 @@ const projectsData = [
   {
     id: 7,
     title: "Harmoney",
-    category: "MERN Stack",
+    category: ["MERN Stack", "Financial Tech"],
     problem: "Tracking daily spending and staying within a budget is difficult without a centralized, simple tool.",
     solution: "A personal finance app built to help users track their daily spending and manage their budgets effectively.",
     impact: "Helps users achieve their savings goals by providing clear visibility into spending habits.",
@@ -193,7 +193,11 @@ export default function Projects() {
 
   const categories = ['AI & NLP', 'Financial Tech', 'MERN Stack'];
 
-  const filteredProjects = projectsData.filter(p => p.category === filter);
+  const filteredProjects = projectsData.filter(p => 
+    Array.isArray(p.category) 
+      ? p.category.includes(filter) 
+      : p.category === filter
+  );
 
   return (
     <section id="projects" className="w-full py-24 px-6 md:px-12 relative z-10 bg-white">
@@ -215,8 +219,8 @@ export default function Projects() {
                 key={cat}
                 onClick={() => setFilter(cat)}
                 className={`px-8 py-2.5 rounded-full text-sm font-bold transition-all border-2 ${filter === cat
-                    ? 'bg-dark border-dark text-white shadow-lg'
-                    : 'bg-white border-gray-200 text-gray-500 hover:border-dark hover:text-dark'
+                  ? 'bg-dark border-dark text-white shadow-lg'
+                  : 'bg-white border-gray-200 text-gray-500 hover:border-dark hover:text-dark'
                   }`}
               >
                 {cat}
