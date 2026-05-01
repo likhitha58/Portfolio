@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #b197fc;
+  --color-secondary: #d8f277;
+  --color-dark: #12141d;
+  --color-light: #f8f9fa;
+  --color-muted: #6c757d;
+  --font-sans: 'Outfit', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-dark text-white font-sans antialiased overflow-x-hidden;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .section-dark {
+    @apply bg-dark text-white;
+  }
+  
+  .rounded-custom {
+    @apply rounded-[2rem];
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 rounded-full bg-primary text-white font-semibold transition-all hover:opacity-90;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 rounded-full border-2 border-dark text-dark font-semibold transition-all hover:bg-dark hover:text-white;
+  }
+
+  .glass-light {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+
+  .text-gradient-purple {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-[#9775fa];
+  }
+}

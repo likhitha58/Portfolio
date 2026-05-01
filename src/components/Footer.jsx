@@ -1,25 +1,24 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub } from "react-icons/fa";
-import "../styles/Footer.css";
+import React from 'react';
 
-function Footer() {
+export default function Footer() {
   return (
-    <footer className="glass-footer mt-5 rounded-top text-center text-white py-4" id="footer">
-      <Container>
-        <p className="mb-2 fw-semibold">Likhitha Tanuboddi</p>
-        <div className="footer-contact d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-3">
-          <span><FaEnvelope className="me-2" /> <a href="mailto:likhitha@example.com" className="footer-link">likhithatanuboddi58@gmail.com</a></span>
-          <span><FaMapMarkerAlt className="me-2" /> Hyderabad, Telangana, India</span>
+    <footer className="w-full py-12 bg-dark text-white relative z-10">
+      <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8 border-t border-white/10 pt-12">
+        <div className="text-2xl font-bold tracking-tight">
+          Likhitha<span className="text-primary">.</span>
         </div>
-        <div className="footer-social d-flex justify-content-center gap-4 fs-4 mb-3">
-          <a href="https://www.linkedin.com/in/likhitha-tanuboddi-05a34a289/" target="_blank" rel="noreferrer" className="footer-link"><FaLinkedin /></a>
-          <a href="https://github.com/likhitha58" target="_blank" rel="noreferrer" className="footer-link"><FaGithub /></a>
+        
+        <p className="text-sm text-gray-500 font-medium">
+          © {new Date().getFullYear()} Designed with passion. All rights reserved.
+        </p>
+
+        <div className="flex items-center gap-8 text-sm font-bold text-gray-400">
+          <a href="#home" className="hover:text-primary transition-colors">Home</a>
+          <a href="#about" className="hover:text-primary transition-colors">About</a>
+          <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
+          <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
         </div>
-        {/* <p className="mb-0">&copy; 2025 Likhitha. All rights reserved.</p> */}
-      </Container>
+      </div>
     </footer>
   );
 }
-
-export default Footer;
