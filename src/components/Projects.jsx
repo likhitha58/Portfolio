@@ -188,14 +188,12 @@ const projectsData = [
 ];
 
 export default function Projects() {
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('AI & NLP');
   const [activeProject, setActiveProject] = useState(null);
 
-  const categories = ['All', 'AI & NLP', 'Financial Tech', 'MERN Stack'];
+  const categories = ['AI & NLP', 'Financial Tech', 'MERN Stack'];
 
-  const filteredProjects = filter === 'All'
-    ? projectsData
-    : projectsData.filter(p => p.category === filter);
+  const filteredProjects = projectsData.filter(p => p.category === filter);
 
   return (
     <section id="projects" className="w-full py-24 px-6 md:px-12 relative z-10 bg-white">
